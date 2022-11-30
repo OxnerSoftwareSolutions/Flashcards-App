@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function FlashCardSkeleton() {
+function FlashCardFramework() {
   return (
     <div className='card my-1 front'>
       <div className='card-body front'>
@@ -17,4 +17,4 @@ function FlashCardSkeleton() {
   );
 }
 
-export default FlashCardSkeleton;
+export default FlashCardFramework;

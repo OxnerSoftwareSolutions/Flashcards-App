@@ -3,7 +3,8 @@ import { Link, useHistory, useParams } from "react-router-dom";
 import FlashCard from "./FlashCard";
 import { readDeck } from "../../utils/api/index";
 import NotEnoughCards from "./NotEnoughCards";
-import FlashCardSkeleton from "./FlashCardFramework";
+import FlashCardFramework from "./FlashCardFramework";
+
 
 function StudyDeck() {
   const history = useHistory();
@@ -55,7 +56,7 @@ function StudyDeck() {
     ) : (
       <NotEnoughCards deck={deck} />
     );
-  const content = loaded ? flashCards : <FlashCardSkeleton />;
+  const content = loaded ? flashCards : <FlashCardFramework />;
 
   return (
     <div>
